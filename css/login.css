@@ -1,9 +1,19 @@
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins-Regular.ttf'); 
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins-Regular';
   background: #f2f2f2;
   color: #333333;
 }
@@ -18,6 +28,55 @@ div {
   background: #ffffff;
   margin: auto;
   padding: 40px 50px;
+}
+
+#background{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;  
+
+}
+
+#background_signup{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: -webkit-linear-gradient(left, #ffecd2, #fcb69f);;
+  background-size: cover;
+  position: relative;
+  z-index: 1; 
+
+}
+#gradient{
+  font-family: 'Poppins-SemiBold';
+  font-size: 72 px;
+  background: -webkit-linear-gradient(left, #13547a, #80d0c7);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #container-form {
@@ -38,6 +97,7 @@ div {
 .input_wrap_sel {
     border-bottom: 2px solid #333333;
 }
+
 
 input::placeholder {
   color: #adadad;
@@ -65,7 +125,7 @@ input {
   width: 300px;
 }
 
-button {
+#login_button {
   font-size: 15px;
   color: #ffffff;
   text-transform: uppercase;
@@ -74,11 +134,24 @@ button {
   height: 50px;
   margin: 10px 0;
   background: #a64bf4;
-  background: -webkit-linear-gradient(left, #21d4fd, #b721ff);;
+  background: -webkit-linear-gradient(left, #ffecd2, #fcb69f);;
   border: none;
   border-radius: 25px;
 }
 
+#signup_button {
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(left, #13547a, #80d0c7);;;
+  border: none;
+  border-radius: 25px;
+}
 
 #signup_option {
   font-size: 13px;
