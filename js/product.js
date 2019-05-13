@@ -4,14 +4,14 @@ var tipo=localStorage.getItem('tipo');
 if (token) {
   token = token.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }
-if (product) {
+/*if (product) {
     product = product.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }
-/*if(tipo){
+if(tipo){
     console.log(tipo)
     tipo=tipo.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }*/
-product="5cd89125e2c99892b09d89c0"
+//product="5cd89125e2c99892b09d89c0"
 /*
 1. Función que muestra y esconde la sección para hacer comentarios 
    al hacer click el botón "Escribe una reseña". 
@@ -30,6 +30,7 @@ $("#escribe_reseña").on('click', function(event){
     (función ajax, 30 puntos)
   ```
   */
+ //console.log(product)
   $.ajax(
     {
         url : 'https://skin-care2019.herokuapp.com/products/'+product,
@@ -56,7 +57,7 @@ $("#escribe_reseña").on('click', function(event){
             `;
           }
           $("#seccion_reviews").append(new_html);
-          console.log(data.name)
+          //console.log(data.name)
           $("#titulo").append(String(data.name));
           $("#calificacion").append(`<div class='stars'>${getStarsSpans(parseInt(data.totalRate))}</div>`)
           $("#comentarios").append(`${Number((data.generalSentiment).toFixed(1))}`)
@@ -64,7 +65,7 @@ $("#escribe_reseña").on('click', function(event){
           $("#tipo").append(String(data.typee));
           $("#precio").append("$"+String(data.price));
           $("#contenido").append(String(data.content)+" ml");
-          console.log(data.image)
+          //console.log(data.image)
           document.getElementById("imagen").src=String(data.image);
           if(data.anti_aging){
             $("#anti-aging").append("Si");

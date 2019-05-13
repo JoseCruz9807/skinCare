@@ -1,3 +1,4 @@
+localStorage.setItem('token', "")
 $('#login_button').on('click', function(){
   // cargar email y password
   var email=document.getElementById("email").value;
@@ -24,7 +25,7 @@ $('#login_button').on('click', function(){
       
       localStorage.setItem('token', data.token)
       localStorage.setItem('tipo', data.user.typee)
-      window.location = './edituser.html'
+      window.location = './home.html'
     },
     error: function(error_msg) {
       alert("Error, contraseña o correo inválido");

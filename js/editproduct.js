@@ -6,7 +6,7 @@ if (token) {
 /*if (product) {
     product = product.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }*/
-product="5cd89125e2c99892b09d89c0"
+//product="5cd89125e2c99892b09d89c0"
 
 
 
