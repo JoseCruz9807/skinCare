@@ -26,10 +26,10 @@ $.ajax(
         $("#price").val(String(data.price));
         $("#content").val(String(data.content));
 
-        $("#anti-aging").checked=data.anti_aging;
-        $("#hipoalergenico").checked=data.hypoallergenic;
-        $("#paraben-free").checked=data.paraben_free;
-        $("#perfume").checked=data.perfume;
+        document.getElementById("anti-aging").checked=data.anti_aging;
+        document.getElementById("hipoalergenico").checked=data.hypoallergenic;
+        document.getElementById("paraben-free").checked=data.paraben_free;
+        document.getElementById("perfume").checked=data.perfume;
         
         $("#ingredientes").val(`${data.ingredients.join(', ')}`)
         $("#skin_type").val(`${data.skin_type.join(', ')}`)
