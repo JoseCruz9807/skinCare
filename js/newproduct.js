@@ -17,7 +17,7 @@ $('#add_button').on('click', function(){
     var hypoallergenic=document.getElementById("hypoallergenic").checked;
     var paraben_free=document.getElementById("paraben-free").checked;
     var perfume=document.getElementById("perfume").checked;
-    var image=document.getElementById("imagen").checked;
+    var image=document.getElementById("imagen").value;
     var content=parseFloat(document.getElementById("content").value);
     var price=parseFloat(document.getElementById("price").value);
     json_to_send = {
