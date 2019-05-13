@@ -40,7 +40,10 @@ div {
     .icon > .label {
       display: none;
     }
-
+span{
+  font-family: 'Poppins-Regular';
+  font-weight: bold;
+}
 #container-home {
   width: 800px;
   min-height: 300px;
