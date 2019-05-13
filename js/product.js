@@ -206,7 +206,7 @@ $("#escribe_reseña").on('click', function(event){
   $("#eliminar").on('click', function(event){
       var confirmacion=confirm("¿Seguro que desea borrar el producto?");
       if (confirmacion == true) {
-        console.log("HOLA")
+        
         $.ajax({
             //url: 'http://localhost:3000/users',
             url: 'https://skin-care2019.herokuapp.com/products/'+product,
