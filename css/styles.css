@@ -8,6 +8,9 @@
   src: url('../fonts/Poppins-Regular.ttf'); 
 }
 
+.imagenProducto{
+  cursor: pointer;
+}
 .icon {
     position: relative;
     text-decoration: none;
