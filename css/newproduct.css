@@ -37,7 +37,17 @@
   height: 960px;
   background: #ffffff;
   margin: auto;
-  border-radius: 2  px;
+  border-radius: 10px;
+  padding: 40px 50px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#container-form1 {
+  width: 880px;
+  height: 1100px;
+  background: #ffffff;
+  margin: auto;
+  border-radius: 10px;
   padding: 40px 50px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -76,6 +86,7 @@
   align-content: center;
   border: none;
   border-radius: 25px;
+  font-weight: bold;
 }
 
 .inputs{
@@ -175,4 +186,9 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.division{
+  margin-top: 12px;
+  margin-bottom: 12px;
 }

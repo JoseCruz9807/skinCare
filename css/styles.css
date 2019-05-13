@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins-Regular.ttf'); 
+}
+
+h4{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  font-weight: lighter;
+  color:#868f96;
+}
 #imageContainer {
   width: 500px;
   height: 170px;
@@ -9,7 +25,7 @@
 }
 
 body {
-  font-family: Verdana, sans-serif;
+  font-family: 'Poppins-Regular';
   color: #505050;
   background-color: #3c55c0;
 }
@@ -31,6 +47,7 @@ div {
   width: 600px;
   background-color: #FEFEFE;
   min-height:100%;
+  border-radius:10px;
 }
 
 fieldset {
@@ -42,11 +59,17 @@ button {
   padding: 10px;
   border: 0px;
   float: right;
-  background-color: #f88f1a;
-  border-radius: 2px;
+  background:-webkit-linear-gradient(left, #13547a, #80d0c7);
+  border-radius: 25px;
   color: white;
   font-weight: bold;
+  font-family: : 'Poppins-Regular';
 }
+
+#container-button {
+  width: 300px;
+}
+
 
 .button:hover {
   opacity: 0.8;
@@ -139,10 +162,14 @@ span.date {
   color: #D4D0D0;
 }
 
+span{
+  font-family: 'Poppins-Regular';
+  font-weight: bold;
+}
 
 /* ----------- STARS ----------- */
 .checked {
-  color: #FFD700;
+  color: #13547a;
 }
 
 div.star_container {
@@ -167,9 +194,13 @@ div.star_container {
     border-bottom-width: 1px;
 }
 body{
-  background-image: linear-gradient(90deg, rgb(241, 58, 58), #36558F);
+  background-image:  -webkit-linear-gradient(left, #ffecd2, #fcb69f);
 }
 .date{
   color: #D3D3D3;
   font-weight: normal;
+}
+
+.botones{
+  color:#ff0844;
 }

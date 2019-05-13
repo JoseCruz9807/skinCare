@@ -83,7 +83,7 @@ div {
   width: 400px;
   background: #ffffff;
   margin: auto;
-  border-radius: 2  px;
+  border-radius: 10px;
   padding: 40px 50px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -157,7 +157,7 @@ input {
   height: 50px;
   margin: 10px 0;
   background: #a64bf4;
-  background: -webkit-linear-gradient(left, #13547a, #80d0c7);;;
+  background: -webkit-linear-gradient(left, #13547a, #80d0c7);
   border: none;
   border-radius: 25px;
 }
