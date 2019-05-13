@@ -50,6 +50,11 @@ $.ajax(
       window.location = './product.html'
   }
 
+  function editPerfil(id){
+    
+    window.location = './edituser.html'
+}
+
   function getStarsSpans(stars) {
     let new_html = "";
     for( let i = 0; i < stars; i++) {

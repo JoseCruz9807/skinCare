@@ -64,10 +64,10 @@ $('#signup_button').on('click', function(){
       success: function(data){
         alert("Información actualizada con exito");
         //console.log('success: '+ data);
-        window.location = './index.html'
+        window.location = './home.html'
       },
       error: function(error_msg) {
-        alert((error_msg['responseText']));//"Algo salió mal, verifica que todos los campos hayan sido llenados de forma correcta y vuelve a intentar");
+        alert("Algo salió mal, verifica que todos los campos hayan sido llenados de forma correcta y vuelve a intentar");
       }
     });
   
