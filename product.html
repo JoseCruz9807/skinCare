@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primer Examen Parcial</title>
+  <link rel="stylesheet" type="text/css" href="css/stars.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <h1 id="titulo"></h1> 
+      <button id="eliminar" class="button hidden">   Eliminar  </button>
+      <button id="editar" class="button hidden">   Editar Producto  </button>
+      <div id="imageContainer">
+        <img id="imagen" src="" />
+     </div></br></br>
+     <h3 id="calificacion">
+         Calificacion:
+     </h3>
+     <h3 id='comentarios'>
+         Comentarios: 
+     </h3>
+     <h3 id="marca">
+         Marca:
+     </h3>
+     <h3 id="tipo">
+        Tipo:
+     </h3>
+     <h4 id="precio">
+         Precio: 
+     </h4>
+     <h4 id="contenido">
+         Contenido: 
+     </h4>
+     <h4 id="ingredientes">
+            Ingredientes: 
+    </h4>
+    <h4 id="tipoPiel">
+            Para pieles: 
+    </h4>
+     <h4 id="anti-aging">
+            Anti-aging: 
+    </h4>
+    <h4 id="hipoalergenico">
+            Hipoalergenico: 
+    </h4>
+
+    <h4 id="paraben-free">
+            Paraben-free: 
+    </h4>
+    <h4 id="perfume">
+            Perfume: 
+    </h4>
+      <button id="escribe_reseña" class="button">Escribe una reseña</button> 
+    </div>
+    
+    <section id="seccion_comentario" class="hidden">
+
+      <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Excelente - 5 stars"></label>
+        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Bueno - 4 stars"></label>
+        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Regular - 3 stars"></label>
+        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Malo - 2 stars"></label>
+        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Muy malo - 1 star"></label>
+      </fieldset>
+      
+      <div id="comentario" placeholder="Comentario" contentEditable="true"></div>
+      <span id="error_comment" class="error hidden">Debes de escribir un comentario</span>
+      <div class="buttons-container">
+        <span class="button button-txt" id="btn-publicar">Publicar</span>
+        <span class="button button-txt" id="btn-limpiar">Cerrar</span>      
+      </div>
+      
+    </section>
+     
+    <section id="seccion_reviews">
+      <!-- Agregar las reviews dinamicamente aqui! -->
+
+      <!-- <div class="stars">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div> -->
+    </section>
+
+  </div>
+
+<script type="text/javascript" src="js/lib/jquery.js" ></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/product.js" ></script>
+</body>
+</html>

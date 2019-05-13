@@ -16,7 +16,7 @@ $('#signup_button').on('click', function(){
 
   $.ajax({
     //url: 'http://localhost:3000/users',
-     url: 'https://mini-web-server9807.herokuapp.com/users',
+     url: 'https://skin-care2019.herokuapp.com/users',
     headers: {
         'Content-Type':'application/json'
     },
@@ -29,7 +29,7 @@ $('#signup_button').on('click', function(){
       window.location = './index.html'
     },
     error: function(error_msg) {
-      alert((error_msg['responseText']));
+      alert("Algo salió mal, verifica que todos los campos hayan sido llenados de forma correcta y vuelve a intentar");
     }
   });
 

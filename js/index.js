@@ -12,7 +12,7 @@ $('#login_button').on('click', function(){
 
   $.ajax({
     //url: 'http://localhost:3000/users/login',
-    url: 'https://mini-web-server9807.herokuapp.com/users/login',
+    url: 'https://skin-care2019.herokuapp.com/users/login',
     headers: {
         'Content-Type':'application/json'
     },
@@ -23,10 +23,11 @@ $('#login_button').on('click', function(){
       // guardar token en localstorage o cookie
       
       localStorage.setItem('token', data.token)
-      window.location = './todo.html'
+      localStorage.setItem('tipo', data.user.typee)
+      window.location = './edituser.html'
     },
     error: function(error_msg) {
-      alert((error_msg["responseText"]));
+      alert("Error, contraseña o correo inválido");
     }
   });
 })

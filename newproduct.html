@@ -24,7 +24,7 @@
         </div>
         <div>
           <label id ="labels"> Tipo de producto</label>
-          <select>
+          <select id="tipo">
             <option value = "cleanser">cleanser</option>
             <option value = "exfoliating">exfoliating</option>
             <option value = "serum">serum</option>
@@ -37,7 +37,7 @@
         </div>
         <div>
           <label id ="labels"> Ingredientes </label>
-          <textarea rows="4" cols="50"></textarea>
+          <textarea rows="4" cols="50" id="ingredientes"></textarea>
         </div>
         <div class= "checks_container">
           <label class= "switch">Anti-aging<input id="anti-aging" type="checkbox"><span class= "slider round"></span></label>
@@ -47,11 +47,11 @@
         </div>
         <div>
           <label id ="labels"> Precio($) </label>
-          <input class ="inputs" id="content" type="number" name="content" placeholder="350">
+          <input class ="inputs" id="price" type="number" name="content" placeholder="350">
         </div>
         <div>
           <label id ="labels"> Contenido (ml) </label>
-          <input class ="inputs" id="price" type="number" name="price" placeholder="200">
+          <input class ="inputs" id="content" type="number" name="price" placeholder="200">
         </div>
         <button id="add_button">Agregar</button>
       </div>

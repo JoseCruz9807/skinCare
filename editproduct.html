@@ -11,10 +11,7 @@
       <div id="form">
         <label id="titulo">Editar producto</label>
         <div>
-          <label id ="labels"> Nombre del producto </label>
-        </div>
-        <div>
-          <label id ="labels"> Marca </label>
+          <label id ="nombre"></label>
         </div>
         <div>
           <label id ="labels"> Imagen </label>
@@ -22,8 +19,8 @@
         </div>
         <div>
           <label id ="labels"> Tipo de producto</label>
-          <select>
-            <option value = "cleanser">cleanser</option>
+          <select id="tipo">
+            <option value = "cleanser" >cleanser</option>
             <option value = "exfoliating">exfoliating</option>
             <option value = "serum">serum</option>
             <option value = "moisturizer">moisturizer</option>
@@ -35,7 +32,7 @@
         </div>
         <div>
           <label id ="labels"> Ingredientes </label>
-          <textarea rows="4" cols="50"></textarea>
+          <textarea id="ingredientes"rows="4" cols="50"></textarea>
         </div>
         <div class= "checks_container">
           <label class= "switch">Anti-aging<input id="anti-aging" type="checkbox"><span class= "slider round"></span></label>
@@ -57,6 +54,6 @@
   </section>
   <script type="text/javascript" src="js/lib/jquery.js" ></script>
   <script type="text/javascript" src="js/js.js"></script>
-  <script type="text/javascript" src="js/newproduct.js"></script>
+  <script type="text/javascript" src="js/editproduct.js"></script>
 </body>
 </html>

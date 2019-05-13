@@ -1,0 +1,175 @@
+#imageContainer {
+  width: 500px;
+  height: 170px;
+}
+
+#imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #505050;
+  background-color: #3c55c0;
+}
+
+h1 { 
+  font-size: 1.5em; 
+  margin: 10px;
+  display: inline-block;
+}
+
+div {
+  clear: left;
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+  padding: 30px 20px;
+  width: 600px;
+  background-color: #FEFEFE;
+  min-height:100%;
+}
+
+fieldset {
+  margin: 10px 0px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border: 0px;
+  float: right;
+  background-color: #f88f1a;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#comentario {
+  padding: 5px;
+  margin: 20px auto;
+  border: 0px;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 14px;
+  min-height: 45px;
+  width: 95%;
+  overflow-wrap: break-word;
+}
+
+#comentario:focus {
+  border-bottom: 2px solid #22B4E2;
+}
+
+#comentario:empty:not(:focus):before {
+  content: attr(placeholder);
+  color: #D4D0D0;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+.input-container {
+  width: 50%;
+  clear: none;
+  float: left;
+}
+
+input[type="text"] {
+  margin: auto;
+  display: block;
+  padding: 10px 0px;
+  width: 90%;
+  font-size: 13px;
+  border: 0px;
+  border-bottom: 2px solid #e0e0e0;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #22B4E2;
+}
+
+::placeholder { 
+  color: #D4D0D0;
+  opacity: 1;
+}
+
+.button-txt {
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  text-transform: uppercase;
+  color: #f88f1a;
+}
+
+.error {
+  padding: 0 10px;
+  display: block;
+  font-size: 11px;
+  color: red;
+  text-align: right;
+}
+
+/* ----------- REVIEWS ----------- */
+
+#seccion_reviews {
+  font-size: 13px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+span.date {
+  margin-left: 15px;
+  font-size: 12px;
+  color: #D4D0D0;
+}
+
+
+/* ----------- STARS ----------- */
+.checked {
+  color: #FFD700;
+}
+
+div.star_container {
+  color: #ddd;
+  margin: 5px 0px;
+}
+/* ----------------------------- */
+/*Agregar nuevos estilos aqui*/
+
+.hidden {
+  display: none;
+}
+
+
+.notchecked {
+  color: #D3D3D3;
+}
+
+.commentBox{
+    border-bottom-style: solid;
+    border-bottom-color: coral;
+    border-bottom-width: 1px;
+}
+body{
+  background-image: linear-gradient(90deg, rgb(241, 58, 58), #36558F);
+}
+.date{
+  color: #D3D3D3;
+  font-weight: normal;
+}
