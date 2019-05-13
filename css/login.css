@@ -22,6 +22,25 @@ div {
   display: block;
 }
 
+.icon {
+    position: relative;
+    text-decoration: none;
+    color: #DB7F67;
+  }
+
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
+
+    .icon > .label {
+      display: none;
+    }
+
 #container-home {
   width: 800px;
   min-height: 300px;

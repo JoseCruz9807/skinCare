@@ -8,6 +8,24 @@
   src: url('../fonts/Poppins-Regular.ttf'); 
 }
 
+.icon {
+    position: relative;
+    text-decoration: none;
+    color: #DB7F67;
+  }
+
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
+
+    .icon > .label {
+      display: none;
+    }
 h4{
   font-family: 'Poppins-Regular';
   font-size: 16px;
@@ -136,7 +154,7 @@ input[type="text"]:focus {
   padding: 10px;
   float: right;
   text-transform: uppercase;
-  color: #f88f1a;
+  color: #80d0c7;
 }
 
 .error {
@@ -170,6 +188,7 @@ span.date {
 span{
   font-family: 'Poppins-Regular';
   font-weight: bold;
+  color: #DB7F67;
 }
 
 /* ----------- STARS ----------- */

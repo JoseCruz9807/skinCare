@@ -12,6 +12,30 @@
   box-sizing: border-box;
 }
 
+span{
+  font-family: 'Poppins-Regular';
+  font-weight: bold;
+  color: #DB7F67;
+}
+.icon {
+    position: relative;
+    text-decoration: none;
+    color: #DB7F67;
+  }
+
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
+
+    .icon > .label {
+      display: none;
+}
+
 #background_newproduct{
   width: 100%;  
   min-height: 100vh;
