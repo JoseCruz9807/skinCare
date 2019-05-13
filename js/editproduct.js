@@ -31,8 +31,9 @@ $.ajax(
         document.getElementById("paraben-free").checked=data.paraben_free;
         document.getElementById("perfume").checked=data.perfume;
         
-        $("#ingredientes").val(`${data.ingredients.join(', ')}`)
-        $("#skin_type").val(`${data.skin_type.join(', ')}`)
+        $("#ingredientes").val(`${data.ingredients.join(', ')}`);
+        
+        $("#skin_type").val(`${data.skin_type.join(', ')}`);
         
     },
 
