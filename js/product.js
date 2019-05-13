@@ -5,33 +5,13 @@ if (token) {
   token = token.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }
 
-/*if (product) {
-    product = product.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
-}
-if(tipo){
-    console.log(tipo)
-    tipo=tipo.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
-}*/
-//product="5cd89125e2c99892b09d89c0"
-/*
-1. Función que muestra y esconde la sección para hacer comentarios 
-   al hacer click el botón "Escribe una reseña". 
-   on click!
-   (10 puntos)
-*/
+
 $("#escribe_reseña").on('click', function(event){
     let $comentatio = $("#seccion_comentario");
     $comentatio.toggleClass("hidden");
   });
   
-  /*
-  ```
-  2. Cargar los comentarios de el archivo comentarios.xml o bien de 
-    https://barbaragabriela.github.io/misc/ 
-    (función ajax, 30 puntos)
-  ```
-  */
- //console.log(product)
+  
   $.ajax(
     {
         url : 'https://skin-care2019.herokuapp.com/products/'+product,
@@ -111,13 +91,7 @@ $("#escribe_reseña").on('click', function(event){
     }
   );
   
-  /*
-  ```
-  3. Funcion que apendiza el nuevo comentario al darle click a PUBLICAR
-    on click!
-    (función, 35 puntos)
-  ```
-  */
+ 
   $("#btn-publicar").on('click', function(event){
     $.ajax({
         //url: 'http://localhost:3000/users',
@@ -232,37 +206,14 @@ $("#escribe_reseña").on('click', function(event){
     window.location = './editproduct.html'
  });
   
-  /*
   
-  ```
-  4. Funcion que limpia el nombre, el email y el div "#comentarios" al darle
-     click en "btn-limpiar" con leyenda de "CANCELAR"
-     on click!
-    (5 puntos)
-  ```
-  */
   $("#btn-limpiar").on('click', function(event){
     let $comentario = $("#comentario");
     let $error= $("#error_comment");
     $error.addClass("hidden");
     $comentario.text("");
   });
-  /*
-  ```
-  Funcion que recibe un numero de stars y regresa los 5 spans 
-  que simbolizan las estrellas del rating. por ejemplo:
-  let stars = 3;
-  let html = getStarsSpans(stars);
   
-  html = "
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star"></span>
-  <span class="fa fa-star"></span>
-  "
-  ```
-  */
   function getStarsSpans(stars) {
     let new_html = "";
     for( let i = 0; i < stars; i++) {
