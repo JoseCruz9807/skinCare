@@ -19,15 +19,15 @@ $.ajax(
           for( i=0;i<data.length;i++){
             new_html+=`
             <div class="col-4 col-6-medium col-12-small">
-                <section>
-                    <a id="imageContainer "class="image featured"><div id="imageContainer"><img src=${String(data[i].image)} alt="${String(data[i]._id)}" id="image" onclick="myfunction(this)"/></div></a>
+                <section >
+                    <div id="imageContainer"><img src=${String(data[i].image)} alt="${String(data[i]._id)}" id="image" onclick="myfunction(this)"/></div>
                     <header>
                         <h3>${String(data[i].name)}</h3>
                     </header>
-                    <div class="stars">
+                    <div class="stars centroProductos">
                         ${getStarsSpans(parseInt(data[i].totalRate))}
                      </div>
-                    <p>Comentarios: ${Number((data[i].generalSentiment).toFixed(1))} </br>
+                    <p class="centroProductos">Comentarios: ${Number((data[i].generalSentiment).toFixed(1))} </br>
                     Tipo: ${String(data[i].typee)}
                     </p>
                     </br>
@@ -35,7 +35,7 @@ $.ajax(
             </div>
             `;
           }
-          $("#container").append(new_html);
+          $("#containerProductos").append(new_html);
       },
   
       error: function (error_msg){
