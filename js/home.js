@@ -32,7 +32,7 @@ $.ajax(
                     <div class="stars centroProductos">
                         ${getStarsSpans(parseInt(data[i].totalRate))}
                      </div>
-                    <p class="centroProductos">Comentarios: ${Number((data[i].generalSentiment).toFixed(1))} </br>
+                    <p class="centroProductos">Calificación: ${Number((data[i].generalSentiment).toFixed(1))} </br>
                     Tipo: ${String(data[i].typee)}
                     </p>
                     </br>
