@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkinCare Add</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/newproduct.css">
+</head>
+<body>
+  <section id= "background_newproduct">
+    <section id="container-form">
+      <div id="form">
+        <label id="titulo">Editar producto</label>
+        <div>
+          <label id ="labels"> Nombre del producto </label>
+        </div>
+        <div>
+          <label id ="labels"> Marca </label>
+        </div>
+        <div>
+          <label id ="labels"> Imagen </label>
+          <span><input class ="inputs" id="imagen" type="text" name="Imagen" placeholder="link"/></span>
+        </div>
+        <div>
+          <label id ="labels"> Tipo de producto</label>
+          <select>
+            <option value = "cleanser">cleanser</option>
+            <option value = "exfoliating">exfoliating</option>
+            <option value = "serum">serum</option>
+            <option value = "moisturizer">moisturizer</option>
+          </select>
+        </div>
+        <div>
+          <label id ="labels"> Tipo(s) de piel </label>
+          <input class ="inputs" id="skin_type" type = "text" name = "skin_type" placeholder="'oily, normal, dry...'">
+        </div>
+        <div>
+          <label id ="labels"> Ingredientes </label>
+          <textarea rows="4" cols="50"></textarea>
+        </div>
+        <div class= "checks_container">
+          <label class= "switch">Anti-aging<input id="anti-aging" type="checkbox"><span class= "slider round"></span></label>
+          <label class = "switch">Hypoallergenic<input id="hypoallergenic" type="checkbox"><span class= "slider round"></span></label>
+          <label class ="switch">Paraben-Free<input id="paraben-free" type="checkbox"><span class= "slider round"></span></label>
+          <label class = "switch">Perfume<input id="perfume" type="checkbox"><span class= "slider round"></span></label>
+        </div>
+        <div>
+          <label id ="labels"> Precio($) </label>
+          <input class ="inputs" id="content" type="number" name="content" placeholder="350">
+        </div>
+        <div>
+          <label id ="labels"> Contenido (ml) </label>
+          <input class ="inputs" id="price" type="number" name="price" placeholder="200">
+        </div>
+        <button id="add_button">Guardar cambios</button>
+      </div>
+    </section>
+  </section>
+  <script type="text/javascript" src="js/lib/jquery.js" ></script>
+  <script type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/newproduct.js"></script>
+</body>
+</html>

@@ -73,7 +73,7 @@ div {
 }
 #gradient{
   font-family: 'Poppins-SemiBold';
-  font-size: 72 px;
+  font-size: 36px;
   background: -webkit-linear-gradient(left, #13547a, #80d0c7);;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -119,6 +119,15 @@ input {
   outline: none;
   border: none;
   overflow: visible;
+}
+
+.lb {
+    font-family: 'Poppins-Regular';
+    font-size: 24px;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
 }
 
 #container-button {
