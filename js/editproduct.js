@@ -52,7 +52,7 @@ $('#add_button').on('click', function(){
     var typee=document.getElementById("tipo").options[document.getElementById("tipo").selectedIndex].text;
 
     var anti_aging=document.getElementById("anti-aging").checked;
-    var hypoallergenic=document.getElementById("hypoallergenic").checked;
+    var hypoallergenic=document.getElementById("hipoalergenico").checked;
     var paraben_free=document.getElementById("paraben-free").checked;
     var perfume=document.getElementById("perfume").checked;
 
