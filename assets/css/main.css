@@ -16,9 +16,12 @@
   font-family: Poppins-Regular;
   src: url('../fonts/Poppins-Regular.ttf'); 
 }
+h1{
+	font-famyly: 'Poppins-SemiBold';
+}
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -149,6 +152,7 @@ input, select, textarea {
 		color: #666;
 		text-decoration: none;
 		border-bottom: solid 1px #ddd;
+		font-family: 'Poppins-SemiBold';
 	}
 
 		a strong {
@@ -156,11 +160,13 @@ input, select, textarea {
 			-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-font-family: 'Poppins-SemiBold';
 		}
 
 		a:hover {
 			color: #ed786a;
 			border-bottom-color: rgba(255, 255, 255, 0);
+			font-family: 'Poppins-SemiBold';
 		}
 
 			a:hover strong {
@@ -2089,7 +2095,7 @@ input, select, textarea {
 	#banner {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
+		background-image: #fff;
 		color: #fff;
 		text-align: center;
 		border-top: solid 2px #e5e5e5;
@@ -2097,7 +2103,7 @@ input, select, textarea {
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
 		text-transform: uppercase;
-		background: url("../../images/banner.jpg");
+		background-image: #fff;
 		background-size: cover;
 		padding: 10em 0;
 	}
@@ -2109,6 +2115,8 @@ input, select, textarea {
 			letter-spacing: 4px;
 			text-align: center;
 			margin: 0;
+			background: #fff;
+			color: #DB7F67;
 		}
 
 		#banner strong {
@@ -2271,6 +2279,11 @@ input, select, textarea {
 
 			#header h1 {
 				font-size: 2.5em;
+				
+			}
+
+			.logo{
+				font-family: 'Poppins-SemiBold';
 			}
 
 		/* Nav */

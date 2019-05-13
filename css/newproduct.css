@@ -96,6 +96,8 @@
   border-right: none;
   border-left: none;
   width: 75%;
+  font-size: 16px;
+  color:#ec8c69;
 }
 
 .inputs_sel {
@@ -106,6 +108,7 @@ input::placeholder {
   color: #adadad;
   font-style: italic;
   width: 100%;
+  font-size:16px;
 }
 
 input:focus::placeholder {
@@ -191,4 +194,11 @@ input:checked + .slider:before {
 .division{
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+#nombre{
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+  color: #ec8c69;
+  font-weight: bold;
 }
