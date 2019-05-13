@@ -51,7 +51,7 @@ $.ajax(
   
   function myfunction(id){
       //console.log(id.id)
-      localStorage.setItem('product', String(id.alt))
+      localStorage.setItem('product', String(id.val))
       window.location = './product.html'
   }
 
