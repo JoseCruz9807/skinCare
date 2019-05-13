@@ -23,9 +23,9 @@ $.ajax(
           let new_html="";
           for( i=0;i<data.length;i++){
             new_html+=`
-            <div class="col-4 col-6-medium col-12-small imagenProducto">
+            <div class="col-4 col-6-medium col-12-small imagenProducto" value="${String(data[i]._id)}" onclick="myfunction(this)">
                 <section >
-                    <div id="imageContainer"><img src=${String(data[i].image)} alt="${String(data[i]._id)}" id="image" onclick="myfunction(this)"/></div>
+                    <div id="imageContainer"><img src=${String(data[i].image)} alt="${String(data[i]._id)}" id="image"/></div>
                     <header>
                         <h3>${String(data[i].name)}</h3>
                     </header>
