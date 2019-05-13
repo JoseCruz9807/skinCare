@@ -53,7 +53,7 @@ $('#add_button').on('click', function(){
         console.log("SUCCESS")
         alert("Producto agregado correctamente");
         //localStorage.setItem('token', data.token)
-        //window.location = './home.html'
+        window.location = './home.html'
       },
       error: function(error_msg) {
         alert("Algo salió mal, verifica que todos los campos sean llenados correctamente");
