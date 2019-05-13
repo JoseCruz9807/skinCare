@@ -209,7 +209,7 @@ $("#escribe_reseña").on('click', function(event){
         console.log("HOLA")
         $.ajax({
             //url: 'http://localhost:3000/users',
-            url: 'https://skin-care2019.herokuapp.com/products/'+producto,
+            url: 'https://skin-care2019.herokuapp.com/products/'+product,
             headers: {
                 'Content-Type':'application/json',
                 'Authorization': 'Bearer ' + token
