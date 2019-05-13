@@ -4,6 +4,7 @@ var tipo=localStorage.getItem('tipo');
 if (token) {
   token = token.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }
+
 /*if (product) {
     product = product.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
 }

@@ -1,7 +1,12 @@
 var token = localStorage.getItem('token');
 var product=localStorage.getItem('product');
+var tipo=localStorage.getItem('tipo');
 if (token) {
   token = token.replace(/^"(.*)"$/, '$1'); // Remove quotes from token start/end.
+}
+
+if(tipo!='admin'){
+  document.getElementById('barraMenu').children[2].style.display='none'
 }
 
 
